@@ -34,7 +34,6 @@ print(classification_report(y_test, y_pred))
 print("[*] Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -42,7 +41,6 @@ importances = model.feature_importances_
 indices = np.argsort(importances)[::-1]
 feature_names = X.columns
 
-# Топ-10 признаков
 plt.figure(figsize=(10, 6))
 plt.title("Важность признаков")
 plt.bar(range(10), importances[indices[:10]], align="center")
