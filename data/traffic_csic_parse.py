@@ -17,9 +17,9 @@ data.columns = data.columns.str.lower().str.replace('-', '')
 # Словарь для сопоставления возможных имен столбцов
 column_mapping = {
     'method': ['method'],
-    'cookie': ['cookie', 'cookies'],
-    'contenttype': ['contenttype', 'content-type'],
-    'length': ['length', 'lenght', 'contentlength', 'content-length'],
+    #'cookie': ['cookie', 'cookies'],
+    #'contenttype': ['contenttype', 'content-type'],
+    #'length': ['length', 'lenght', 'contentlength', 'content-length'],
     'content': ['content', 'body'],
     'url': ['url'],
     'classification': ['classification', 'label']
